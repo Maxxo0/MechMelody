@@ -3,31 +3,22 @@
     "maps": [
         {
             "name": "Gameplay",
-            "id": "b279be92-790c-4acb-8fd2-e203cd4dbe38",
+            "id": "daa315a2-f341-45d6-9796-121cff606af7",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "d489c0b1-22e1-4b53-8516-3ef55e624ff8",
+                    "id": "a85ea01d-6109-4c47-9be4-e1cc2c0228a5",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "a64befda-15ae-4189-b61f-e367e23b098b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
-                    "id": "5939f72f-de04-40b6-9d90-d8c51723eb60",
+                    "name": "Keyboard",
+                    "id": "1e4403e6-e9b7-4b65-b924-69d318105513",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -38,7 +29,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "0388d091-e771-4cda-9e7d-ee44d54cfc3a",
+                    "id": "78589e58-a746-4714-b83e-f88efe2b193f",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -49,7 +40,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "9269aefe-df61-44ce-a082-e3ff273fdcfc",
+                    "id": "67bc43a0-eef4-4f76-b89c-e2edefcd0f50",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
@@ -60,7 +51,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "f98adffd-abd4-44e2-b4a7-7f60db2e8b87",
+                    "id": "b40ff703-d737-4a93-a271-c60cb16076db",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -71,7 +62,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "e85ddeb6-8d53-418a-befa-d1a827d437dc",
+                    "id": "b46d622d-63d8-4679-8817-2f1cc56604e8",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
@@ -79,45 +70,6 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "b995b71b-4514-4bc7-aeb9-ae94d782f767",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Music Menu",
-            "id": "b2c6aa0c-cee1-45dd-a4bf-99c8e27d8273",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "1883b62c-aaec-4460-827e-3ac2f4ff17d5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "d9edc4cd-3739-4fdd-be8b-e492f3b44f98",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }
