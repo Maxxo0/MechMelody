@@ -75,8 +75,13 @@ public class PlayerController : MonoBehaviour
             //playerAnimator.SetBool("Jump", true);
         }
 
-
-
     }
+
+   /* public void ChangeMusic(InputAction.CallbackContext context)
+    {
+        GameManager.Instance.actualMusicStatus = GameManager.MusicStatus.yellow;
+    }
+    */
+
 }
 

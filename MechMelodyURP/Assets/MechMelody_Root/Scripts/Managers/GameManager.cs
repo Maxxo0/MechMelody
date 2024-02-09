@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                Debug.Log("GameManager is null!");
+            }
+            return instance;
+        }
+    }
+
+    public enum MusicStatus { purple, yellow, orange, blue }
+
+    public MusicStatus actualMusicStatus = MusicStatus.purple;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +31,19 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
 }

@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50252971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50252972}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: ShootPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &50252972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50252971}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.36, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 603097222}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &603097221
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,6 +169,7 @@ GameObject:
   - component: {fileID: 603097228}
   - component: {fileID: 603097226}
   - component: {fileID: 603097227}
+  - component: {fileID: 603097229}
   m_Layer: 0
   m_Name: Player Body
   m_TagString: Player
@@ -156,7 +188,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 50252972}
   m_Father: {fileID: 1399519205}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -301,10 +334,46 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: e209ca13-d3a2-4212-a44e-28a4781ec51c
-    m_ActionName: Gameplay/Move
+    m_ActionId: a85ea01d-6109-4c47-9be4-e1cc2c0228a5
+    m_ActionName: Gameplay/Move[/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 603097227}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 40322ddf-3e51-4234-9307-8603c03db3e8
+    m_ActionName: Gameplay/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7af5d88b-b0fb-4fc8-b463-918f98d7e5d0
+    m_ActionName: MusicMenu/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 603097229}
+        m_TargetAssemblyTypeName: Shoot, Assembly-CSharp
+        m_MethodName: Attack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 969b45b0-e06c-4be9-9122-093a4f752b57
+    m_ActionName: Gameplay/Attack[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -343,6 +412,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &603097229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603097221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daced9f5a0e732b44b099c985b31c7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint: {fileID: 50252971}
+  bullet1: {fileID: 7425001246612141130, guid: 19c266515e3b97f459db04fb4a963d2b, type: 3}
+  bullet2: {fileID: 7254890581452098944, guid: 246def77671c40a4d9dd4a4408af3f95, type: 3}
+  bullet3: {fileID: 0}
+  bullet4: {fileID: 0}
+  condicion: 1
+  fireRate: 0.5
+  canShoot: 0
 --- !u!1 &1399519204
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1399519205}
+  - component: {fileID: 1399519206}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -375,6 +465,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399519206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399519204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd78c57ceaf07bb42942b1cb4ed1d217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualMusicStatus: 0
 --- !u!1 &1586646868
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +492,7 @@ GameObject:
   - component: {fileID: 1586646869}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -527,7 +630,7 @@ Transform:
   m_GameObject: {fileID: 1586646868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.47, z: 0}
-  m_LocalScale: {x: 17.6, y: 1, z: 1}
+  m_LocalScale: {x: 239.13121, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
