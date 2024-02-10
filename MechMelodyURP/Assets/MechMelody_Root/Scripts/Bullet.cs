@@ -44,10 +44,13 @@ public class Bullet : MonoBehaviour
                     isGrounded = false;
                     yellowBullet.AddForce(Vector2.up * bulletJumpForce, ForceMode2D.Impulse);
                 }
-                
-                
+                 
                 break;
             case GameManager.MusicStatus.orange:
+                bulletSpeed = 50f;
+                transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);
+                break;
+            case GameManager.MusicStatus.blue:
                 bulletSpeed = 50f;
                 transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);
                 break;

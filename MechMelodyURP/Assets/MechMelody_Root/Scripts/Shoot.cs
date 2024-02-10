@@ -16,7 +16,7 @@ public class Shoot : MonoBehaviour
 
     [Header("Attack Stats")]
     public int condicion = 1;
-    public float fireRate = 0.5f;
+    public float fireRate =     0.5f;
     public bool canShoot;
 
 
@@ -55,7 +55,22 @@ public class Shoot : MonoBehaviour
                     Invoke(nameof(RestartShoot), fireRate);
                 }
                 break;
-
+            case GameManager.MusicStatus.orange:
+                if (canShoot)
+                {
+                    canShoot = false;
+                    Instantiate(bullet3, shootPoint.transform.position, shootPoint.transform.rotation);
+                    Invoke(nameof(RestartShoot), fireRate);
+                }
+                break;
+            case GameManager.MusicStatus.blue:
+                if (canShoot)
+                {
+                    canShoot = false;
+                    Instantiate(bullet4, shootPoint.transform.position, shootPoint.transform.rotation);
+                    Invoke(nameof(RestartShoot), fireRate);
+                }
+                break;
         }
     }
 
