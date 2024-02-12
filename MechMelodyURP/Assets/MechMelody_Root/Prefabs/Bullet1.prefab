@@ -102,6 +102,7 @@ MonoBehaviour:
   bulletSpeed: 5
   isGrounded: 0
   bulletJumpForce: 5
+  lifeTime: 2
 --- !u!58 &3901681485058641754
 CircleCollider2D:
   m_ObjectHideFlags: 0
