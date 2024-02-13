@@ -36,13 +36,14 @@ public class Bullet : MonoBehaviour
         
         BulletStatus();
         if (bulletJumpForce <= 0) { gameObject.SetActive(false); }
+        Debug.Log(dir);
     }
 
     private void FixedUpdate()
     {
         lifeTime -= Time.deltaTime;
         if (blue) { bullet.velocity = new Vector3(dir * bulletSpeed * normalizedOrientation.x, bulletSpeed * normalizedOrientation.y, 0); }
-        
+       
     }
 
     public void BulletStatus()
@@ -91,6 +92,12 @@ public class Bullet : MonoBehaviour
         {
             bulletJumpForce--;
             isGrounded = true;
+        }
+
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+
+            gameObject.SetActive(false);
         }
 
     }

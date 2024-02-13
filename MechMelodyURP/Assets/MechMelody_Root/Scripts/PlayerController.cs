@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer playerSprite;
     Animator playerAnimator;
     [SerializeField] GameObject musicPanel;
-    
+
 
     [Header("Move Stats")]
     public float speed;
@@ -144,18 +144,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
-     public void ChangeMusic(InputAction.CallbackContext context)
-     {
-        playerInput.SwitchCurrentActionMap("MusicMenu");
-        musicPanel.SetActive(true);
-
-     }
+   
      
-    public void ReturnGameplay(InputAction.CallbackContext context) 
-    {
-        playerInput.SwitchCurrentActionMap("Gameplay");
-        musicPanel.SetActive(false);
-    }
+    
     
 
     void Salto()
@@ -169,9 +160,6 @@ public class PlayerController : MonoBehaviour
         rb.gravityScale = 0.5f;
     }
 
- 
-
-
     private IEnumerator Dash()
     {
         Debug.Log("va");
@@ -183,6 +171,19 @@ public class PlayerController : MonoBehaviour
         canMove = true;
         yield return null;
     }
+
+
+    public void ChangeMusic(InputAction.CallbackContext context)
+    {
+        if (isGrounded) 
+        {
+            playerInput.SwitchCurrentActionMap("MusicMenu");
+            musicPanel.SetActive(true);
+            Time.timeScale = 0.5f;
+        }
+
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
