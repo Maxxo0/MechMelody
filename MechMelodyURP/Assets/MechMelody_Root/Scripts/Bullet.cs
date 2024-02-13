@@ -42,9 +42,7 @@ public class Bullet : MonoBehaviour
     {
         lifeTime -= Time.deltaTime;
         if (blue) { bullet.velocity = new Vector3(dir * bulletSpeed * normalizedOrientation.x, bulletSpeed * normalizedOrientation.y, 0); }
-        {
-            
-        }
+        
     }
 
     public void BulletStatus()
