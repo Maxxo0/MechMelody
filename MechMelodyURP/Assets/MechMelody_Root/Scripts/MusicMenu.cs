@@ -20,6 +20,7 @@ public class MusicMenu : MonoBehaviour
 
     [Header("MusicMech")]
     int music;
+    int nextMusic;
 
 
     // Start is called before the first frame update
@@ -49,6 +50,7 @@ public class MusicMenu : MonoBehaviour
         if (music == 3) { GameManager.Instance.actualMusicStatus = GameManager.MusicStatus.orange; }
         if (music == 4) { GameManager.Instance.actualMusicStatus = GameManager.MusicStatus.blue; }
         musicPanel.SetActive(false);
+        AudioManager.Instance.PlayMusic(nextMusic);
         playerInput.SwitchCurrentActionMap("Gameplay");
     }
 
@@ -59,6 +61,7 @@ public class MusicMenu : MonoBehaviour
         rock.SetActive(false);
         classic.SetActive(false);
         music = 1;
+        nextMusic = AudioManager.Instance.pop;
     }
 
     public void Jazz(InputAction.CallbackContext context) 
@@ -68,6 +71,7 @@ public class MusicMenu : MonoBehaviour
         rock.SetActive(false);
         classic.SetActive(false);
         music = 2;
+        nextMusic = AudioManager.Instance.jazz;
     }
 
     public void Rock(InputAction.CallbackContext context)
@@ -77,6 +81,7 @@ public class MusicMenu : MonoBehaviour
         rock.SetActive(true);
         classic.SetActive(false);
         music = 3;
+        nextMusic = AudioManager.Instance.rock;
     }
 
     public void Classic(InputAction.CallbackContext context) 
@@ -86,5 +91,6 @@ public class MusicMenu : MonoBehaviour
         rock.SetActive(false);
         classic.SetActive(true);
         music = 4;
+        nextMusic = AudioManager.Instance.classic;
     }
 }

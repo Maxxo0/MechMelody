@@ -8,6 +8,8 @@ TagManager:
   - ShootPoint
   - Ground
   - Wall
+  - Enemy
+  - EBullet
   layers:
   - Default
   - TransparentFX

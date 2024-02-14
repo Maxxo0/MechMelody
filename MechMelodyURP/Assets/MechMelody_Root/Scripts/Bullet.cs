@@ -53,7 +53,7 @@ public class Bullet : MonoBehaviour
 
             case GameManager.MusicStatus.purple:
                 
-                bulletSpeed = 5f;
+                bulletSpeed = 7f;
                 transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);
                 if (lifeTime <= 0) { gameObject.SetActive(false); }
                 break;
