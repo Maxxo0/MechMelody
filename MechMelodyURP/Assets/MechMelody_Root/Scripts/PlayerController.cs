@@ -66,11 +66,13 @@ public class PlayerController : MonoBehaviour
         if (moveInput.x > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            GameManager.Instance.bulletRot = false;
             //playerAnimator.SetBool("Run", true);
         }
         else if (moveInput.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
+            GameManager.Instance.bulletRot = true;
             //playerAnimator.SetBool("Run", true);
         }
         else

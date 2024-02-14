@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameManager.Instance.bulletRot == true) { dir = -1; }
         BulletStatus();
         if (bulletJumpForce <= 0) { gameObject.SetActive(false); }
         Debug.Log(dir);
@@ -77,8 +77,10 @@ public class Bullet : MonoBehaviour
                 if (lifeTime <= 0) { gameObject.SetActive(false); }
                 break;
             case GameManager.MusicStatus.blue:
-                
-                bulletSpeed = 5f;
+
+                if (GameManager.Instance.bulletRot == true) { dir = -1; }
+                if (GameManager.Instance.bulletRot == false) { dir = 1; }
+                bulletSpeed = 30f;
                 blue = true;
                 if (lifeTime <= 0) { gameObject.SetActive(false); }
                 break;
@@ -100,6 +102,7 @@ public class Bullet : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+      
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -109,6 +112,7 @@ public class Bullet : MonoBehaviour
 
             gameObject.SetActive(false);
         }
+        
     }
 
 }

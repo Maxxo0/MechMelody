@@ -40,15 +40,7 @@ public class Shoot : MonoBehaviour
     public void Attack(InputAction.CallbackContext context)
     {
 
-        float angle1 = 5f;
-        float angle2 = 2f;
-        float angle3 = -2f;
-        float angle4 = -5f;
-
-        Vector2 dir1 = CalculateVector(angle1);
-        Vector2 dir2 = CalculateVector(angle2);
-        Vector2 dir3 = CalculateVector(angle3);
-        Vector2 dir4 = CalculateVector(angle4);
+        
 
 
 
@@ -83,6 +75,16 @@ public class Shoot : MonoBehaviour
             case GameManager.MusicStatus.blue:
                 if (canShoot)
                 {
+                    float angle1 = 5f;
+                    float angle2 = 2f;
+                    float angle3 = -2f;
+                    float angle4 = -5f;
+
+                    Vector2 dir1 = CalculateVector(angle1);
+                    Vector2 dir2 = CalculateVector(angle2);
+                    Vector2 dir3 = CalculateVector(angle3);
+                    Vector2 dir4 = CalculateVector(angle4);
+
                     GameObject b1 = Instantiate(bullet4, shootPoint.transform.position, shootPoint.transform.rotation);
                     b1.GetComponent<Bullet>().dir = transform.localScale.x;
                     b1.GetComponent<Bullet>().direction = dir1;
