@@ -75,10 +75,10 @@ public class Shoot : MonoBehaviour
             case GameManager.MusicStatus.blue:
                 if (canShoot)
                 {
-                    float angle1 = 5f;
-                    float angle2 = 2f;
-                    float angle3 = -2f;
-                    float angle4 = -5f;
+                    float angle1 = 10f;
+                    float angle2 = 5f;
+                    float angle3 = -5f;
+                    float angle4 = -10f;
 
                     Vector2 dir1 = CalculateVector(angle1);
                     Vector2 dir2 = CalculateVector(angle2);

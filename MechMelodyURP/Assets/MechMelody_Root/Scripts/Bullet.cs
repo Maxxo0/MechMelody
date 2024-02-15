@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     private Vector2 normalizedOrientation;
     Rigidbody2D bullet;
     bool blue;
-    
+    bool anim;    
 
 
     // Start is called before the first frame update
@@ -27,6 +27,8 @@ public class Bullet : MonoBehaviour
         normalization = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
         normalizedOrientation = new Vector3(direction.x / normalization, direction.y / normalization);
         bullet = GetComponent<Rigidbody2D>();
+        
+        anim = false;
 
     }
 
@@ -59,14 +61,17 @@ public class Bullet : MonoBehaviour
                 break;
             case GameManager.MusicStatus.yellow:
                 
-                
+                Animator jazzAnim = GetComponent<Animator>();
                 bulletSpeed = 5f;
                 transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);
                 if (isGrounded)
                 {
+                    if (anim) { jazzAnim.SetTrigger("Ground"); }
                     isGrounded = false;
+                    
                     bullet.AddForce(Vector2.up * bulletJumpForce, ForceMode2D.Impulse);
                 }
+                
                 if (lifeTime <= 0) { gameObject.SetActive(false); }
 
                 break;
@@ -94,6 +99,7 @@ public class Bullet : MonoBehaviour
         {
             bulletJumpForce--;
             isGrounded = true;
+            anim = true;
         }
 
         if (collision.gameObject.CompareTag("Wall"))
