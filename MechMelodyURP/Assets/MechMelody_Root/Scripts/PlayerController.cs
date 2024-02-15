@@ -164,7 +164,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        Debug.Log("va");
+        
         canMove = false;
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(dashForce * moveInput.x, 0);

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MechMelody_Root/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/MechMelody_Root/Scenes/Menu.unity
+    guid: d88a31d8dc852d64489dd312d6160e2f
+  - enabled: 1
+    path: Assets/MechMelody_Root/Scenes/MaxiScene.unity
+    guid: e06b84350225639459f966db6e31a201
   m_configObjects: {}
