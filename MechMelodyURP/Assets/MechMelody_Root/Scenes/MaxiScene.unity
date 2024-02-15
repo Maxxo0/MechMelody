@@ -579,6 +579,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9d7ef8c5-f6e8-406e-87a5-f66c887c3293
     m_ActionName: Menus/Options[/XInputControllerWindows/start]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 355453963053629337}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Controls
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1f548467-c9ee-45dd-be00-235d407bb194
+    m_ActionName: Gameplay/Menu[/XInputControllerWindows/start]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 355453963053629337}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ExitControls
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2b13ea49-b3b6-4e74-878d-47b245ed7156
+    m_ActionName: Gameplay/ExitMenu[/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -602,7 +634,7 @@ MonoBehaviour:
   isGrounded: 0
   nJumps: 0
   dashForce: 10
-  dashTime: 1
+  dashTime: 0.5
   canMove: 0
 --- !u!95 &603097228
 Animator:

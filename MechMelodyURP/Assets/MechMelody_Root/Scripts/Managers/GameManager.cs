@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
     public void ExitControls(InputAction.CallbackContext context)
     {
         controlMenu.SetActive(false);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
 
 
