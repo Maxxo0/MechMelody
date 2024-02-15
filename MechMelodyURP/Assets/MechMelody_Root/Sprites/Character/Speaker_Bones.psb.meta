@@ -107,7 +107,7 @@ ScriptedImporter:
       height: 246
     spriteID: a3cbe5c247e0f8646b1f195a0df5f522
     spriteBone:
-    - name: bone_1
+    - name: Cabeza
       guid: 751ddd7c2ac34c947aaed204219d2e03
       position: {x: 218.09521, y: 18.380981, z: 0}
       rotation: {x: 0, y: 0, z: 0.7034526, w: 0.7107422}
@@ -489,20 +489,20 @@ ScriptedImporter:
       height: 156
     spriteID: 2e1d2e903f33a3544a081153d8b1c7d4
     spriteBone:
-    - name: bone_5
+    - name: DedosD
       guid: 5cce38ed614c19049b498dc9cd7299e5
-      position: {x: 68.993355, y: -0.000019546034, z: 0}
-      rotation: {x: 0, y: 0, z: 0.6438315, w: 0.76516736}
-      length: 93.508064
+      position: {x: 68.993355, y: -0.000009387342, z: 0}
+      rotation: {x: 0, y: 0, z: 0.643832, w: 0.7651669}
+      length: 93.50807
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_4
+    - name: PieD
       guid: 023d2a4abfd499b4986a2613737d84cd
-      position: {x: 47.333252, y: 117.476166, z: 0}
-      rotation: {x: 0, y: 0, z: 0.66692114, w: -0.74512833}
-      length: 68.993385
+      position: {x: 47.333252, y: 117.47629, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6669216, w: -0.7451279}
+      length: 68.993355
       parentId: -1
       color:
         serializedVersion: 2
@@ -858,18 +858,18 @@ ScriptedImporter:
       height: 156
     spriteID: d9ba4da6bf366eb45a159661028def35
     spriteBone:
-    - name: bone_9
+    - name: DedosI
       guid: 33974c895e54af645bd6d00d9056200d
-      position: {x: 69.229675, y: -0.000016453858, z: 0}
+      position: {x: 69.229675, y: -0.000017988097, z: 0}
       rotation: {x: 0, y: 0, z: 0.6486112, w: 0.76111996}
-      length: 89.54406
+      length: 89.54405
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_8
+    - name: PieI
       guid: 4e9527b14d1bee841b6262d0b3e36dbb
-      position: {x: 38.61902, y: 119.38098, z: 0}
+      position: {x: 38.61902, y: 119.38086, z: 0}
       rotation: {x: 0, y: 0, z: 0.6566702, w: -0.7541778}
       length: 69.22965
       parentId: -1
@@ -1229,18 +1229,18 @@ ScriptedImporter:
     spriteBone:
     - name: bone_7
       guid: aa18f13e5dfc86344b48ea317e4f09b7
-      position: {x: 135.25145, y: -0.000032475353, z: 0}
+      position: {x: 135.25168, y: -0.000030851832, z: 0}
       rotation: {x: 0, y: 0, z: 0.0070335926, w: 0.9999753}
       length: 125.71419
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278223103
-    - name: bone_6
+    - name: PiernaI
       guid: 606bdeee74c7b3d479f9ebda6795eb6e
       position: {x: 21.047607, y: 286.33325, z: 0}
       rotation: {x: 0, y: 0, z: 0.71206564, w: -0.702113}
-      length: 135.2515
+      length: 135.25162
       parentId: -1
       color:
         serializedVersion: 2
@@ -1576,18 +1576,18 @@ ScriptedImporter:
     spriteBone:
     - name: bone_3
       guid: 6e19b3cd90782004ba40019209a6aea2
-      position: {x: 154.29718, y: -0.000006569626, z: 0}
+      position: {x: 154.29713, y: 0.0000043584396, z: 0}
       rotation: {x: 0, y: 0, z: 0.014114844, w: 0.99990046}
       length: 120.01513
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_2
+    - name: PiernaD
       guid: 405aa31d35593684abc5aa37e1a9552b
       position: {x: 19.999939, y: 286.33325, z: 0}
       rotation: {x: 0, y: 0, z: 0.71146023, w: -0.7027264}
-      length: 154.2974
+      length: 154.29727
       parentId: -1
       color:
         serializedVersion: 2
@@ -1921,7 +1921,7 @@ ScriptedImporter:
       height: 121
     spriteID: 08084c37265695f4d848bbdfce513cbd
     spriteBone:
-    - name: bone_10
+    - name: Antena
       guid: 54d20c2eb8ab758418ee21e9b1cc8c51
       position: {x: 14.2022705, y: 5.98053, z: 0}
       rotation: {x: 0, y: 0, z: 0.7116245, w: 0.70256007}
@@ -2224,7 +2224,7 @@ ScriptedImporter:
     spritePosition: {x: 871, y: 885}
   characterData:
     bones:
-    - name: bone_1
+    - name: Cabeza
       guid: 751ddd7c2ac34c947aaed204219d2e03
       position: {x: 1178.0952, y: 692.381, z: 0}
       rotation: {x: 0, y: 0, z: 0.7034526, w: 0.7107422}
@@ -2233,61 +2233,61 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_2
+    - name: PiernaD
       guid: 405aa31d35593684abc5aa37e1a9552b
       position: {x: -61.086716, y: 197.47604, z: 0}
       rotation: {x: 0, y: -0, z: 0.9999995, w: 0.0010212222}
-      length: 154.29738
+      length: 154.29726
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: bone_3
       guid: 6e19b3cd90782004ba40019209a6aea2
-      position: {x: 154.2973, y: 0.0000086472155, z: 0}
+      position: {x: 154.29718, y: 0.000007139497, z: 0}
       rotation: {x: 0, y: 0, z: 0.014114831, w: 0.9999004}
       length: 120.01512
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_4
+    - name: PieD
       guid: 023d2a4abfd499b4986a2613737d84cd
       position: {x: 228.1495, y: -28.387152, z: 0}
-      rotation: {x: 0, y: 0, z: 0.047371775, w: 0.99887735}
-      length: 68.99337
+      rotation: {x: 0, y: 0, z: 0.04737115, w: 0.99887735}
+      length: 68.99335
       parentId: 2
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_5
+    - name: DedosD
       guid: 5cce38ed614c19049b498dc9cd7299e5
-      position: {x: 68.99335, y: -0.000013198302, z: 0}
-      rotation: {x: 0, y: 0, z: 0.6438315, w: 0.76516736}
+      position: {x: 68.993355, y: 0.000012630717, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6438321, w: 0.7651669}
       length: 93.50806
       parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_6
+    - name: PiernaI
       guid: 606bdeee74c7b3d479f9ebda6795eb6e
       position: {x: -58.003857, y: -101.555725, z: 0}
       rotation: {x: 0, y: -0, z: 0.9999983, w: 0.0018831044}
-      length: 135.25148
+      length: 135.2516
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: bone_7
       guid: aa18f13e5dfc86344b48ea317e4f09b7
-      position: {x: 135.25153, y: -0.00007641782, z: 0}
+      position: {x: 135.25165, y: -0.000074699696, z: 0}
       rotation: {x: 0, y: 0, z: 0.007033584, w: 0.9999753}
       length: 125.71419
       parentId: 5
       color:
         serializedVersion: 2
         rgba: 4278223103
-    - name: bone_8
+    - name: PieI
       guid: 4e9527b14d1bee841b6262d0b3e36dbb
       position: {x: 245.71419, y: -9.522929, z: 0}
       rotation: {x: 0, y: 0, z: 0.068952344, w: 0.99762}
@@ -2296,16 +2296,16 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255488
-    - name: bone_9
+    - name: DedosI
       guid: 33974c895e54af645bd6d00d9056200d
-      position: {x: 69.22963, y: -0.000052213523, z: 0}
-      rotation: {x: 0, y: 0, z: 0.6486112, w: 0.76111996}
+      position: {x: 69.22962, y: -0.00006900655, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6486112, w: 0.7611199}
       length: 89.544044
       parentId: 7
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_10
+    - name: Antena
       guid: 54d20c2eb8ab758418ee21e9b1cc8c51
       position: {x: 195.56961, y: 294.92474, z: 0}
       rotation: {x: 0, y: 0, z: 0.011563867, w: 0.9999331}
@@ -2334,12 +2334,30 @@ ScriptedImporter:
       parentGroup: 0
       order: 0
     - spritePosition:
+        x: 871
+        y: 885
+        width: 29
+        height: 121
+      spriteId: 08084c37265695f4d848bbdfce513cbd
+      bones: 090000000a000000
+      parentGroup: 0
+      order: 0
+    - spritePosition:
         x: 906
         y: 133
         width: 193
         height: 156
       spriteId: 2e1d2e903f33a3544a081153d8b1c7d4
       bones: 0400000003000000
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 960
+        y: 347
+        width: 42
+        height: 312
+      spriteId: 4c3ec358943f9884682e13024358f014
+      bones: 0200000001000000
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -2360,27 +2378,9 @@ ScriptedImporter:
       bones: 0600000005000000
       parentGroup: 0
       order: 0
-    - spritePosition:
-        x: 960
-        y: 347
-        width: 42
-        height: 312
-      spriteId: 4c3ec358943f9884682e13024358f014
-      bones: 0200000001000000
-      parentGroup: 0
-      order: 0
-    - spritePosition:
-        x: 871
-        y: 885
-        width: 29
-        height: 121
-      spriteId: 08084c37265695f4d848bbdfce513cbd
-      bones: 090000000a000000
-      parentGroup: 0
-      order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.60714275, y: 0.13403879}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -2477,8 +2477,8 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
   characterMode: 1
-  documentPivot: {x: 0.5, y: 0}
-  documentAlignment: 7
+  documentPivot: {x: 0.60714275, y: 0.13403879}
+  documentAlignment: 9
   importHiddenLayers: 0
   layerMappingOption: 2
   generatePhysicsShape: 0
