@@ -12,7 +12,7 @@ public class Shoot : MonoBehaviour
     [SerializeField] GameObject bullet2;
     [SerializeField] GameObject bullet3;
     [SerializeField] GameObject bullet4;
-    [SerializeField] Animator playerAnimator;
+    Animator playerAnimator;
 
 
 
@@ -29,6 +29,7 @@ public class Shoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerAnimator = GetComponent<Animator>();
         canShoot = true;
     }
 

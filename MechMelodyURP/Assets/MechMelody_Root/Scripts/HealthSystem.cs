@@ -9,11 +9,13 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] Image hpBar;
     public float health;
     public float maxHealth;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class HealthSystem : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        animator.SetTrigger("Damage");
     }
 
     void Die()

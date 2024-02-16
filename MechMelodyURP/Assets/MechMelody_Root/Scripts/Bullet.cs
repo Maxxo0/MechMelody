@@ -67,9 +67,9 @@ public class Bullet : MonoBehaviour
                 if (isGrounded)
                 {
                     if (anim) { jazzAnim.SetTrigger("Ground"); }
-                    isGrounded = false;
                     
                     bullet.AddForce(Vector2.up * bulletJumpForce, ForceMode2D.Impulse);
+                    isGrounded = false;
                 }
                 
                 if (lifeTime <= 0) { gameObject.SetActive(false); }

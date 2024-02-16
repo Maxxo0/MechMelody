@@ -43,9 +43,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: -8653719598885068355, guid: 49270c881849754459cd68372905571d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 49270c881849754459cd68372905571d, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 49270c881849754459cd68372905571d, type: 3}
       propertyPath: m_LocalScale.x
