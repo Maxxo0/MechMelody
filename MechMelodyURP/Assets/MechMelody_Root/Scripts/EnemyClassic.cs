@@ -57,8 +57,8 @@ public class EnemyClassic : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 180, 0);
         distance = Vector2.Distance(transform.position, Player.transform.position) ;
         transform.position = Vector2.MoveTowards(this.transform.position, points[i].position, speedboost * Time.deltaTime);*/
-        if (i == 1) { transform.rotation = Quaternion.Euler(0, 180, 0); }
-        if (i == 0) { transform.rotation = Quaternion.Euler(0, 0, 0); }
+        if (i == 1) { transform.rotation = Quaternion.Euler(0, 0, 0); }
+        if (i == 0) { transform.rotation = Quaternion.Euler(0, 180, 0); }
     }
 
 

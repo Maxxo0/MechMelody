@@ -9,6 +9,7 @@ public class EnemyPop : MonoBehaviour
     CircleCollider2D shootCol;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject shootPoint;
+    Animator popAnim;
     public float fireRate = 1.5f;
     public bool canShoot;
     
@@ -28,6 +29,7 @@ public class EnemyPop : MonoBehaviour
     {
         enemyCol = GetComponent<BoxCollider2D>();
         shootCol = GetComponent<CircleCollider2D>();
+        popAnim = GetComponent<Animator>();
         canShoot = true;
         fireRate = 1.5f;
     }
@@ -75,6 +77,7 @@ public class EnemyPop : MonoBehaviour
 
     void Shoot()
     {
+        popAnim.SetTrigger("Attack");
         canShoot = false;
         Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
         
