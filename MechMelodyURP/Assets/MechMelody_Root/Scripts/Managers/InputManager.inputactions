@@ -239,17 +239,6 @@
                 },
                 {
                     "name": "",
-                    "id": "ba659301-9d38-4008-9ecf-250ca8fb2646",
-                    "path": "<XInputController>/start",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "7f3279d3-bc31-43f0-9b1c-08602589981d",
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",

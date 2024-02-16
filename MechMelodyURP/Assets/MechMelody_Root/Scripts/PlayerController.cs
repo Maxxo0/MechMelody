@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer playerSprite;
     Animator playerAnimator;
     [SerializeField] GameObject musicPanel;
+    [SerializeField] GameObject controlMenu;
 
 
     [Header("Move Stats")]
@@ -203,5 +205,27 @@ public class PlayerController : MonoBehaviour
             
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Exit"))
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
+
+    public void Controls(InputAction.CallbackContext context)
+    {
+        controlMenu.SetActive(true);
+        Time.timeScale = 0f;
+
+    }
+
+    public void ExitControls(InputAction.CallbackContext context)
+    {
+        controlMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
 }
 
