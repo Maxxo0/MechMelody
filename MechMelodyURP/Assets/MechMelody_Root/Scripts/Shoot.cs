@@ -12,6 +12,7 @@ public class Shoot : MonoBehaviour
     [SerializeField] GameObject bullet2;
     [SerializeField] GameObject bullet3;
     [SerializeField] GameObject bullet4;
+    [SerializeField] Animator playerAnimator;
 
 
 
@@ -51,6 +52,7 @@ public class Shoot : MonoBehaviour
             case GameManager.MusicStatus.purple:
                 if(canShoot)
                 {
+                    playerAnimator.SetTrigger("Attack");
                     canShoot = false;
                     Instantiate(bullet1, shootPoint.transform.position, Quaternion.identity);
                     Invoke(nameof(RestartShoot), fireRate);
@@ -59,6 +61,7 @@ public class Shoot : MonoBehaviour
             case GameManager.MusicStatus.yellow:
                 if (canShoot)
                 {
+                    playerAnimator.SetTrigger("Attack");
                     canShoot = false;
                     Instantiate(bullet2, shootPoint.transform.position, shootPoint.transform.rotation);
                     Invoke(nameof(RestartShoot), fireRate);
@@ -67,6 +70,7 @@ public class Shoot : MonoBehaviour
             case GameManager.MusicStatus.orange:
                 if (canShoot)
                 {
+                    playerAnimator.SetTrigger("Attack");
                     canShoot = false;
                     Instantiate(bullet3, shootPoint.transform.position, shootPoint.transform.rotation);
                     Invoke(nameof(RestartShoot), fireRate);
@@ -75,6 +79,7 @@ public class Shoot : MonoBehaviour
             case GameManager.MusicStatus.blue:
                 if (canShoot)
                 {
+                    playerAnimator.SetTrigger("Attack");
                     float angle1 = 10f;
                     float angle2 = 5f;
                     float angle3 = -5f;

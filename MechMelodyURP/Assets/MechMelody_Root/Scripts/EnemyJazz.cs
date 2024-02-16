@@ -66,6 +66,7 @@ public class EnemyJazz : MonoBehaviour
         {
             HealthSystem hpSystem = collision.gameObject.GetComponent<HealthSystem>();
             hpSystem.TakeDamage(damage);
+            collision.rigidbody.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
         }
 
         if (collision.gameObject.CompareTag("Bullet"))

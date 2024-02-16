@@ -65,19 +65,21 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector3(moveInput.x * speed, rb.velocity.y, 0);
         if (moveInput.x > 0)
         {
+            playerAnimator.SetBool("Run", true);
             transform.rotation = Quaternion.Euler(0, 0, 0);
             GameManager.Instance.bulletRot = false;
             //playerAnimator.SetBool("Run", true);
         }
         else if (moveInput.x < 0)
         {
+            playerAnimator.SetBool("Run", true);
             transform.rotation = Quaternion.Euler(0, 180, 0);
             GameManager.Instance.bulletRot = true;
             //playerAnimator.SetBool("Run", true);
         }
         else
         {
-            //playerAnimator.SetBool("Run", false);
+            playerAnimator.SetBool("Run", false);
         }
     }
 
@@ -154,6 +156,7 @@ public class PlayerController : MonoBehaviour
     void Salto()
     {
         isGrounded = false;
+        playerAnimator.SetBool("Jump", true);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
@@ -164,11 +167,12 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        
+        playerAnimator.SetBool("Dash", true);
         canMove = false;
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(dashForce * moveInput.x, 0);
         yield return new WaitForSeconds(dashTime);
+        playerAnimator.SetBool("Dash", false);
         rb.gravityScale = 1f;
         canMove = true;
         yield return null;
@@ -191,6 +195,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            playerAnimator.SetBool("Jump", false);
             isGrounded = true;
             nJumps = 1;
             rb.gravityScale = 1f;

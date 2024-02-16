@@ -217,17 +217,6 @@
                 },
                 {
                     "name": "",
-                    "id": "ebad9a0a-a89f-4342-bf40-b83541876156",
-                    "path": "<Gamepad>/leftStick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Change",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "4cd427d0-436b-45de-ab06-7b853a1950c6",
                     "path": "<Gamepad>/dpad/down",
                     "interactions": "",

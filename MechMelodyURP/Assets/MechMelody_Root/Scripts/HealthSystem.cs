@@ -20,7 +20,7 @@ public class HealthSystem : MonoBehaviour
     void Update()
     {
         if (health <= 0) { health = 0; Die(); }
-        //hpBar.fillAmount = health / maxHealth;
+        hpBar.fillAmount = health / maxHealth;
     }
 
     public void TakeDamage(int damage)
