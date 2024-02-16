@@ -2614,19 +2614,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1261793931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 355453963053629337}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ExitControls
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1261793931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2981,8 +2969,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1213214924}
-  - {fileID: 1551058453}
   - {fileID: 289916215}
+  - {fileID: 1551058453}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4834,17 +4822,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f62cdd2e6b064184c90dbd7d3c6f963e, type: 3}
---- !u!114 &355453963053629337 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2082467079578241091, guid: f62cdd2e6b064184c90dbd7d3c6f963e, type: 3}
-  m_PrefabInstance: {fileID: 355453963053629336}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd78c57ceaf07bb42942b1cb4ed1d217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &981816187031267390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4997,10 +4974,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1551058452}
     - target: {fileID: 5518046394964507483, guid: 16852ac751def724e9ddac0ad16e7a16, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99762046
-      objectReference: {fileID: 0}
-    - target: {fileID: 5518046394964507483, guid: 16852ac751def724e9ddac0ad16e7a16, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.06894494
       objectReference: {fileID: 0}
@@ -5012,10 +4985,6 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1959373522}
-    - target: {fileID: 5968839949826378068, guid: 16852ac751def724e9ddac0ad16e7a16, type: 3}
-      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Controls
-      objectReference: {fileID: 0}
     - target: {fileID: 5968839949826378068, guid: 16852ac751def724e9ddac0ad16e7a16, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ExitControls
@@ -5031,10 +5000,6 @@ PrefabInstance:
     - target: {fileID: 7148343327727694372, guid: 16852ac751def724e9ddac0ad16e7a16, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7913125359965890087, guid: 16852ac751def724e9ddac0ad16e7a16, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999752
       objectReference: {fileID: 0}
     - target: {fileID: 7913125359965890087, guid: 16852ac751def724e9ddac0ad16e7a16, type: 3}
       propertyPath: m_LocalRotation.z

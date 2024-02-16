@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -35,7 +36,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.bulletRot == true) { dir = -1; }
+        
         BulletStatus();
         if (bulletJumpForce <= 0) { gameObject.SetActive(false); }
         Debug.Log(dir);
@@ -54,6 +55,7 @@ public class Bullet : MonoBehaviour
         {
 
             case GameManager.MusicStatus.purple:
+                
                 
                 bulletSpeed = 7f;
                 transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);

@@ -55,7 +55,7 @@ public class Shoot : MonoBehaviour
                 {
                     playerAnimator.SetTrigger("Attack");
                     canShoot = false;
-                    Instantiate(bullet1, shootPoint.transform.position, Quaternion.identity);
+                    Instantiate(bullet1, shootPoint.transform.position, shootPoint.transform.rotation);
                     Invoke(nameof(RestartShoot), fireRate);
                 }
                 break;
